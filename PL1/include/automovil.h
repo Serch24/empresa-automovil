@@ -9,6 +9,7 @@ struct automovil
 {
     string modelo;
     string color;
+    string peso;
 
 };
 
