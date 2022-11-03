@@ -34,9 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/automovil.h" />
+		<Unit filename="include/Automovil.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/automovil.cpp" />
+		<Unit filename="src/Automovil.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

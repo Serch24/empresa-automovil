@@ -7,14 +7,14 @@ int main()
     int opcion;
 
     do{
-        cout <<"1. Generar automóviles disponibles" << endl;
-        cout <<"2. Generar automóviles en la fábrica" << endl;
-        cout <<"3. Mostrar automóviles en fábrica" << endl;
-        cout <<"4. Transportar automóvil al almacén" << endl;
-        cout <<"5. Mostrar utomóviles en el almacén" << endl;
-        cout <<"6. Mostrar datos del almacén" << endl;
-        cout <<"7. Borrar automóviles" << endl;
-        cout <<"8. Realizar simulación" << endl;
+        cout <<"1. Generar automoviles disponibles" << endl;
+        cout <<"2. Generar automoviles en la fabrica" << endl;
+        cout <<"3. Mostrar automoviles en fabrica" << endl;
+        cout <<"4. Transportar automovil al almacen" << endl;
+        cout <<"5. Mostrar utomoviles en el almacen" << endl;
+        cout <<"6. Mostrar datos del almacen" << endl;
+        cout <<"7. Borrar automoviles" << endl;
+        cout <<"8. Realizar simulacion" << endl;
         cout <<"0. Salir" << endl;
 
         cin >> opcion;
