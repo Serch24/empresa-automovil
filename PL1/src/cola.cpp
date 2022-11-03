@@ -6,7 +6,7 @@ cola::~cola()
     while(primero) desencolar();
 }
 
-void Cola::encolar(tRegistroAutomovil v)
+void Cola::encolar(Automovil v)
 {
     pNodo nuevo; /* Crear un nodo nuevo */
     nuevo = new Nodo(v);
@@ -21,10 +21,10 @@ void Cola::encolar(tRegistroAutomovil v)
     if(!primero) primero = nuevo;
 }
 
-tRegistroAutomovil Cola::desencolar()
+Automovil Cola::desencolar()
 {
     pNodo nodo; /* variable auxiliar para manipular nodo */
-    tRegistroAutomovil v; /* variable auxiliar para retorno */
+    Automovil v; /* variable auxiliar para retorno */
 
     /* Nodo apunta al primer elemento de la pila */
     nodo = primero;

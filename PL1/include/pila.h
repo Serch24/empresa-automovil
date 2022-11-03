@@ -2,7 +2,7 @@
 #define PILA_H
 
 #include <iostream>
-#include "nodos.h"
+#include "nodo.h"
 using namespace std;
 
 class Pila
@@ -12,8 +12,8 @@ class Pila
     public:
         Pila() : cima(NULL) {}        //Constructor de Pila
         ~Pila();
-        void apilar(tRegistroAutomovil v);
-        tRegistroAutomovil desapilar();
+        void apilar(Automovil v);
+        Automovil desapilar();
         void mostrarCima();
 };
 

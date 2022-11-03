@@ -13,12 +13,12 @@ tRegistroAutomovil leeAutomovil (void){
     return p;
 }
 
-void escribeAutomovil (tRegistroAutomovil p){
+void escribeAutomovil (Automovil p){
     cout << p.identificador << " " << p.dni << " " << p.nombre << endl;
 }
 
-tRegistroAutomovil dameAutomovilVacio (void){
-    tRegistroAutomovil p;
+Automovil dameAutomovilVacio (void){
+    Automovil p;
     p.identificador=0;
     p.dni="0";
     p.nombre="0";

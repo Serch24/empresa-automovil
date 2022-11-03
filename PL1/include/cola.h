@@ -2,7 +2,7 @@
 #define COLA_H
 
 #include <iostream>
-#include "nodos.h"
+#include "nodo.h"
 
 using namespace std;
 
@@ -11,8 +11,8 @@ class Cola
     public:
         Cola() : ultimo (NULL), primero(NULL){}
         ~Cola();
-        void encolar(tRegistroAutomovil v);
-        tRegistroAutomovil desencolar();
+        void encolar(Automovil v);
+        Automovil desencolar();
 
     protected:
 

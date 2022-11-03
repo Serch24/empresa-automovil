@@ -7,7 +7,7 @@ Pila::~Pila()
 }
 
 //Meter elemento en la Pila
-void Pila::apilar(tRegistroAutomovil v)
+void Pila::apilar(Automovil v)
 {
     pNodo nuevo; //Var aux para manipular el nuevo nodo
 
@@ -19,10 +19,10 @@ void Pila::apilar(tRegistroAutomovil v)
 }
 
 //Sacar elemento de la Pila
-tRegistroAutomovil Pila::desapilar()
+Automovil Pila::desapilar()
 {
     pNodo nodo; //Var aux para manipular el nodo
-    tRegistroAutomovil v; //Var aux para el retorno del valor del nodo
+    Automovil v; //Var aux para el retorno del valor del nodo
 
     if(!cima) return dameAutomovilVacio(); // Si no hay nodos en la pila se devuelve 0
 
