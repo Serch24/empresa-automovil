@@ -2,6 +2,13 @@
 1584209020 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\pl1\main.cpp
 	<iostream>
 
-1666864255 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
+1667500927 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
+	<iostream>
+	"Automovil.h"
+
+1667477768 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\automovil.cpp
+	"Automovil.h"
+
+1667500990 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\automovil.h
 	<iostream>
 

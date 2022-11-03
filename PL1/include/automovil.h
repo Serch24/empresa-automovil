@@ -1,7 +1,10 @@
 #ifndef AUTOMOVIL_H
 #define AUTOMOVIL_H
 
+#include <string>
 #include <iostream>
+
+using namespace std;
 
 class Automovil
 {
