@@ -1,11 +1,12 @@
-#include "Automovil.h"
+#include "automovil.h"
 
-Automovil::Automovil()
+/**automovil::automovil()
 {
     //ctor
 }
 
-Automovil::~Automovil()
+automovil::~automovil()
 {
     //dtor
 }
+*/

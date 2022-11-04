@@ -21,3 +21,4 @@ class Cola
 };
 
 #endif // COLA_H
+

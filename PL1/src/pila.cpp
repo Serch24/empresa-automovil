@@ -1,10 +1,5 @@
 #include "pila.h"
 
-//Destructor de la Pila
-Pila::~Pila()
-{
-    while(cima) desapilar();
-}
 
 //Meter elemento en la Pila
 void Pila::apilar(Automovil v)
@@ -41,9 +36,19 @@ Automovil Pila::desapilar()
     return v;
 }
 
+//Destructor de la Pila
+Pila::~Pila()
+{
+    while(cima) desapilar();
+}
+
 void Pila::mostrarCima()
 {
     if(!cima) cout << "Cima: 0" << endl;
-    else{ cout << "Cima: "  << endl; escribeAutomovil(cima->valor);}
+    else{
+        cout << "Cima: "  << endl;
+        Automovil escribeAutomovil(cima->valor);
+    }
 
 }
+

@@ -1,6 +1,9 @@
 #include <iostream>
 
 #include "Automovil.h"
+#include "pila.h"
+#include "cola.h"
+#include "nodo.h"
 
 using namespace std;
 
@@ -20,6 +23,35 @@ int main()
         cout <<"0. Salir" << endl;
 
         cin >> opcion;
+
+        switch (opcion){
+        case 1:
+            // lo que Marìa harà ;)
+            break;
+        case 2:
+            // lo que Marìa harà ;)
+            break;
+        case 3:
+            // lo que Marìa harà ;)
+            break;
+        case 4:
+            // lo que Marìa harà ;)
+            break;
+        case 5:
+            // lo que Marìa harà ;)
+            break;
+        case 6:
+            // lo que Marìa harà ;)
+            break;
+        case 7:
+            // lo que Marìa harà ;)
+            break;
+        case 8:
+            // lo que Marìa harà ;)
+            break;
+
+
+        }
     }while (opcion != 0);
 
 

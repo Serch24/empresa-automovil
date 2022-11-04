@@ -1,7 +1,7 @@
 #ifndef NODO_H
 #define NODO_H
 
-#include "Automovil.h"
+#include "automovil.h"
 
 using namespace std;
 

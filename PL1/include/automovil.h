@@ -1,24 +1,21 @@
-#ifndef AUTOMOVIL_H
-#define AUTOMOVIL_H
+#ifndef AUTOMOVIL_H_INCLUDED
+#define AUTOMOVIL_H_INCLUDED
 
-#include <string>
 #include <iostream>
 
 using namespace std;
 
-class Automovil
+struct Automovil
 {
-    public:
-        Automovil();
-        virtual ~Automovil();
+    string Nbastidor;
+    string modelo;
+    string color;
+    string concesionario;
 
-    protected:
-
-    private:
-        string Nbastidor;
-        string modelo;
-        string color;
-        string concesionario;
 };
 
-#endif // AUTOMOVIL_H
+Automovil leeAutomovil (void);
+void escribeAutomovil (Automovil p);
+Automovil dameAutomovilVacio (void);
+
+#endif
