@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctime>
 
+#include "automovil.h"
 #include "cola.h"
 #include "pila.h"
 #include "nodo.h"
@@ -28,7 +29,8 @@ int main()
         switch (opcion){
         case 1:
 
-            p = leeAutomovil();
+            /* p = leeAutomovil(); */
+            cout << modeloAleatorio() << endl;
             break;
         case 2:
             // lo que María hará ;)

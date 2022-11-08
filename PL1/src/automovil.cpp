@@ -1,6 +1,8 @@
 #include "automovil.h"
 
+#include <cstdlib>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -29,57 +31,36 @@ Automovil dameAutomovilVacio (void){
 
     return numbastidor;
 }
+*/
 
-string modelo(){
+string modeloAleatorio(){
 
-    int i = 0;
+    int modeloRandom = 0;
     string unModelo = "";
-    string nuevoModelo[] = {"Fiat", "Ford", "Seat", "Honda"}
+    string nuevoModelo[] = {"Fiat", "Ford", "Seat", "Honda"};
 
-    i = rand() % 4;
-    unModelo = nuevoModelo[i];
-
-    return unModelo;
-}*/
-
-string color(){
-
-    int i = 0;
-    string unColor = "";
-    string nuevoColor[] = {"rojo", "negro", "blanco", "azul", "verde", "gris"}
-
-    i = rand() % 6;
-    unColor = nuevoColor[i];
-
-    return unColor;
+    modeloRandom = rand() % 4;
+    return nuevoModelo[modeloRandom];
 }
 
-/**string concesionario(){
 
-    int i = 0;
-    string unConcesionario = ;
-    string nuevoConcesionario[] = {"A", "B", "C", "D"}
+string  colorAleatorio(){
 
-    i rand() % 4;
-    unConcesionario = nuevoConcesionario[i];
+        srand(time(NULL));
+        int i = 0;
+        string nuevoColor[] = {"rojo", "negro", "blanco", "azul", "verde", "gris"};
+        i = rand() % 6;
+        return nuevoColor[i];
+}
 
-    return unConcesionario;
-}*/
+string concesionarioAleatorio(){
 
+    int randomLetras = 0;
+    int numeroRandom = 0;
+    string nuevoConcesionarioLetras[] = {"A", "B", "C", "D"};
 
+    randomLetras = rand() % 4;
+    numeroRandom = rand() % 4 + 1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return nuevoConcesionarioLetras[randomLetras] + to_string(numeroRandom);
+}
