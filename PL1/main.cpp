@@ -27,8 +27,9 @@ int main()
         Automovil p;
         switch (opcion){
         case 1:
+            cout << bastidorAleatorio() << endl;
+            cout << " " << endl;
 
-            p = leeAutomovil();
             break;
         case 2:
             // lo que María hará ;)
