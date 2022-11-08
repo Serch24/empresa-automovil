@@ -29,8 +29,9 @@ Automovil Cola::desencolar()
     /* Nodo apunta al primer elemento de la pila*/
     nodo = primero;
 
-    if(!nodo) return dameAutomovilVacio(); /* Si no hay nodos en la pila retornamos 0*/
-
+    if(!nodo){
+            return dameAutomovilVacio(); /* Si no hay nodos en la pila retornamos 0*/
+    }
     /* Asignamos a primero la dirección del segundo nodo*/
     primero = nodo->siguiente;
 

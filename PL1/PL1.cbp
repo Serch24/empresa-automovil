@@ -34,12 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Automovil.h" />
+		<Unit filename="include/automovil.h" />
 		<Unit filename="include/cola.h" />
 		<Unit filename="include/nodo.h" />
 		<Unit filename="include/pila.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Automovil.cpp" />
+		<Unit filename="src/automovil.cpp" />
 		<Unit filename="src/cola.cpp" />
 		<Unit filename="src/nodo.cpp" />
 		<Unit filename="src/pila.cpp" />

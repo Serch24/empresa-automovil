@@ -7,15 +7,24 @@ using namespace std;
 
 struct Automovil
 {
-    string Nbastidor;
-    string modelo;
-    string color;
-    string concesionario;
+        string Nbastidor;
+        string modelo;
+        string color;
+        string concesionario = "Z0";
 
+        /**Automovil(string bastidorAleatorio, string modeloAleatorio, string colorAleatorio, string concesionarioAleatorio);
+        ~Automovil();*/
 };
+
 
 Automovil leeAutomovil (void);
 void escribeAutomovil (Automovil p);
 Automovil dameAutomovilVacio (void);
+
+string bastidorAleatorio();
+string modeloAleatorio();
+string colorAleatorio();
+string concesionarioAleatorio();
+
 
 #endif

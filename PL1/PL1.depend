@@ -2,17 +2,19 @@
 1584209020 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\pl1\main.cpp
 	<iostream>
 
-1667505695 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
+1667921373 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
 	<iostream>
-	"Automovil.h"
-	"pila.h"
+	<stdlib.h>
+	<ctime>
 	"cola.h"
+	"pila.h"
 	"nodo.h"
 
-1667565697 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\automovil.cpp
+1667921899 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\automovil.cpp
 	"automovil.h"
+	<iostream>
 
-1667565692 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\automovil.h
+1667920995 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\automovil.h
 	<iostream>
 
 1667564433 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\pila.h
@@ -26,14 +28,12 @@
 	<iostream>
 	"nodo.h"
 
-1667509455 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\nodo.cpp
+1667921896 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\nodo.cpp
 	"nodo.h"
-	"Automovil.h"
 
-1667564389 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\cola.cpp
+1667919995 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\cola.cpp
 	"cola.h"
 
-1667565286 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\pila.cpp
+1667910347 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\pila.cpp
 	"pila.h"
-	"Automovil.h"
 

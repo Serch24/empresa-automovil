@@ -1,8 +1,9 @@
 #include <iostream>
+#include <stdlib.h>
+#include <ctime>
 
-#include "Automovil.h"
-#include "pila.h"
 #include "cola.h"
+#include "pila.h"
 #include "nodo.h"
 
 using namespace std;
@@ -23,33 +24,33 @@ int main()
         cout <<"0. Salir" << endl;
 
         cin >> opcion;
-
+        Automovil p;
         switch (opcion){
         case 1:
-            // lo que Marìa harà ;)
+
+            p = leeAutomovil();
             break;
         case 2:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 3:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 4:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 5:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 6:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 7:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
         case 8:
-            // lo que Marìa harà ;)
+            // lo que María hará ;)
             break;
-
 
         }
     }while (opcion != 0);
