@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
-#include <ctime>
 
 #include "automovil.h"
 #include "cola.h"
@@ -25,14 +23,19 @@ int main()
         cout <<"0. Salir" << endl;
 
         cin >> opcion;
-        Automovil p;
+        Cola cola;
+        Pila pila;
         switch (opcion){
         case 1:
-            cout << bastidorAleatorio() << endl;
-            cout << " " << endl;
+            cola = generaAutomovil();
+
             break;
         case 2:
-            // lo que María hará ;)
+            int num;
+            cout << "Introduce el numero de aitomoviles (NV): " << endl;
+            cin >> num;
+            cola = generaAutomovil(num);
+
             break;
         case 3:
             // lo que María hará ;)

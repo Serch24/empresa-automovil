@@ -2,6 +2,7 @@
 #define AUTOMOVIL_H_INCLUDED
 
 #include <iostream>
+#include "cola.h"
 
 using namespace std;
 
@@ -20,11 +21,12 @@ struct Automovil
 Automovil leeAutomovil (void);
 void escribeAutomovil (Automovil p);
 Automovil dameAutomovilVacio (void);
-
+Cola generaAutomovil(void);
 string bastidorAleatorio();
 string modeloAleatorio();
 string colorAleatorio();
 string concesionarioAleatorio();
+Cola generaAutomovil(int numero);
 
 
 #endif
