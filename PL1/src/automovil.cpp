@@ -1,11 +1,11 @@
 #include "automovil.h"
-#include "pila.h"
 
 #include <cstdlib>
 //#include <stdlib.h>
 #include <time.h>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -85,26 +85,29 @@ string concesionarioAleatorio(){
             return nuevoConcesionarioLetras[randomLetras] + to_string(numeroRandom);
         }
 
- Cola generaAutomovil(){
-     Cola cola;
-     srand(time(NULL));
-     int NV;
+ vector<Automovil> generaAutomovil(){
 
-     NV = rand % 60 +40;
-     for(int a = 0; a < NV; a++){
+     srand(time(NULL));
+     int nv;
+
+
+     vector<Automovil> tmp;
+     for(int a = 0; a < nv; a++){
+        nv = rand() % 60 + 40;
         Automovil v;
         v.color = colorAleatorio();
         v.concesionario = concesionarioAleatorio();
         v.modelo = modeloAleatorio();
         v.Nbastidor = bastidorAleatorio();
 
-        cola.encolar(v);
+        tmp.push_back(v);
     }
-    return cola;
+    return tmp;
  }
+/**
+ Automovil[] generaAutomovil(int numero){
 
- Cola generaAutomovil(int numero){
-     Cola cola;
+     Automovil tmp[numero];
      for(int a = 0; a < numero; a++){
         Automovil v;
         v.color = colorAleatorio();
@@ -112,8 +115,8 @@ string concesionarioAleatorio(){
         v.modelo = modeloAleatorio();
         v.Nbastidor = bastidorAleatorio();
 
-        cola.encolar(v);
+        tmp[a] = v
     }
-    return cola;
- }
+    return tmp;
+ }*/
 

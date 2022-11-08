@@ -4,6 +4,7 @@
 #include "cola.h"
 #include "pila.h"
 #include "nodo.h"
+#include <vector>
 
 using namespace std;
 
@@ -25,16 +26,28 @@ int main()
         cin >> opcion;
         Cola cola;
         Pila pila;
+        vector<Automovil> qwq = generaAutomovil();
         switch (opcion){
         case 1:
-            cola = generaAutomovil();
+            /**Automovil  * tmp = generaAutomovil();
+            int getArrayLength = sizeof(tmp)/sizeof(Automovil);
+            for (int a = 0; a <= getArrayLength, a++){
+                //cola.encolar(tmp[a]);
+                cout << tmp[a] << endl;
 
+            };*/
+
+            for(int i = 0; i< qwq.size(); i++){
+                cout << qwq.at(i).color << endl;
+            }
+            /**for(Automovil zz: qwq)
+
+                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;*/
+                //cout << zz.concesionario << endl;
+                //cout << zz.modelo << endl;
+                //cout << zz.Nbastidor << endl;
             break;
         case 2:
-            int num;
-            cout << "Introduce el numero de aitomoviles (NV): " << endl;
-            cin >> num;
-            cola = generaAutomovil(num);
 
             break;
         case 3:
