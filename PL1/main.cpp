@@ -1,10 +1,6 @@
 #include <iostream>
 
 #include "automovil.h"
-#include "cola.h"
-#include "pila.h"
-#include "nodo.h"
-#include <vector>
 
 using namespace std;
 
@@ -24,33 +20,23 @@ int main()
         cout <<"0. Salir" << endl;
 
         cin >> opcion;
-        Cola cola;
-        Pila pila;
-        vector<Automovil> fabrica;
+
         switch (opcion){
         case 1:
-            fabrica = generaAutomovil();
-
-
-            for(Automovil zz: qwq)
-                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;
-
+            encola_automovil();
             break;
         case 2:
             int nv;
-            cout <<"Introduce el numero de automoviles que se van a generar: "<< endl;
+            cout << "introcude algo " << endl;
             cin >> nv;
-
-            qwq = generaAutomovil(nv);
-            for(Automovil zz: qwq)
-                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;
-
+            encola_automovil(nv);
             break;
+
         case 3:
-            // lo que María hará ;)
+            mostrar_fabrica();
             break;
         case 4:
-            // lo que María hará ;)
+
             break;
         case 5:
             // lo que María hará ;)

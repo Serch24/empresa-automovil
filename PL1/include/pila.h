@@ -14,7 +14,7 @@ class Pila
         ~Pila();
         void apilar(Automovil v);
         Automovil desapilar();
-        //void mostrarCima();
+        void aa();
 };
 
 

@@ -14,11 +14,13 @@ class Cola
         ~Cola();
         void encolar(Automovil v);
         Automovil desencolar();
+        Automovil cimaCola();
+        pNodo primero;
 
     protected:
 
     private:
-        pNodo ultimo, primero;
+        pNodo ultimo;
 };
 
 #endif // COLA_H

@@ -5,14 +5,18 @@ Cola::~Cola()
     while(primero) desencolar();
 }
 
+
+
 void Cola::encolar(Automovil v)
 {
+
     pNodo nuevo; /* Crear un nodo nuevo*/
     nuevo = new Nodo(v);
 
     /* Si la cola no estaba vacía, añadimos el nuevo a continuación de último*/
-    if(ultimo) ultimo->siguiente = nuevo;
-
+    if(ultimo){
+            ultimo->siguiente = nuevo;
+    }
     /* Ahora, el último elemento de la cola es el nuevo nodo*/
     ultimo = nuevo;
 
@@ -20,22 +24,40 @@ void Cola::encolar(Automovil v)
     if(!primero) primero = nuevo;
 }
 
-Automovil Cola::desencolar()
-{
+Automovil Cola::cimaCola(){
     pNodo nodo; /* variable auxiliar para manipular nodo*/
-    Automovil valor; /* variable auxiliar para retorno*/
+    Automovil v; /* variable auxiliar para retorno*/
 
     /* Nodo apunta al primer elemento de la pila*/
     nodo = primero;
 
     if(!nodo){
-            return valor; /* Si no hay nodos en la pila retornamos 0*/
+            return dameAutomovilVacio(); /* Si no hay nodos en la pila retornamos 0*/
     }
     /* Asignamos a primero la dirección del segundo nodo*/
     primero = nodo->siguiente;
 
     /* Guardamos el valor de retorno*/
-    valor = nodo->v;
+    v = nodo->valor;
+    return v;
+}
+
+Automovil Cola::desencolar()
+{
+    pNodo nodo; /* variable auxiliar para manipular nodo*/
+    Automovil v; /* variable auxiliar para retorno*/
+
+    /* Nodo apunta al primer elemento de la pila*/
+    nodo = primero;
+
+    if(!nodo){
+            return dameAutomovilVacio(); /* Si no hay nodos en la pila retornamos 0*/
+    }
+    /* Asignamos a primero la dirección del segundo nodo*/
+    primero = nodo->siguiente;
+
+    /* Guardamos el valor de retorno*/
+    v = nodo->valor;
 
     /* Borrar el nodo*/
     delete nodo;
@@ -43,6 +65,6 @@ Automovil Cola::desencolar()
     /* Si la cola quedó vacía, ultimo debe ser NULL también */
     if(!primero) ultimo = NULL;
 
-    return valor;
+    return v;
 }
 

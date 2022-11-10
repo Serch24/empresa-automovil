@@ -8,14 +8,15 @@ using namespace std;
 class Nodo
 {
     private:
-        Automovil v;
+        Automovil valor;
         Nodo *siguiente;
         friend class Cola;
         friend class Pila;
+        //friend class Automovil;
     public:
-        Nodo(Automovil valor, Nodo *sig = NULL) //Constructor de Nodo
+        Nodo(Automovil v, Nodo *sig = NULL) //Constructor de Nodo
         {
-        v = valor;
+        valor = v;
         siguiente = sig;
         }
 };

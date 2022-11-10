@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <vector>
-//#include "cola.h"
 
 using namespace std;
 
@@ -13,7 +12,6 @@ struct Automovil
         string modelo ;
         string color;
         string concesionario = "Z0";
-        int indice;
 };
 
 
@@ -21,14 +19,15 @@ Automovil leeAutomovil (void);
 void escribeAutomovil (Automovil p);
 Automovil dameAutomovilVacio (void);
 
-//Automovil generaAutomovil();
-//Automovil escribeAutomovil();
-vector<Automovil> generaAutomovil(void);
+Automovil generaAutomovil(void);
 string bastidorAleatorio();
 string modeloAleatorio();
 string colorAleatorio();
-string concesionarioAleatorio();
-vector<Automovil> generaAutomovil(int nv);
-
+string concesionarioAleatorio_letra();
+string concesionarioAleatorio_numero();
+Automovil generaAutomovil(int nv);
+void encola_automovil();
+void encola_automovil(int nv);
+void mostrar_fabrica();
 
 #endif
