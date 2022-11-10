@@ -1,8 +1,8 @@
 #include "automovil.h"
 
-#include <cstdlib>
-//#include <stdlib.h>
-#include <time.h>
+//#include <cstdlib>
+#include <stdlib.h>
+#include <ctime>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -16,13 +16,18 @@ Automovil leeAutomovil (void){
     return p;
 }
 
-Automovil dameAutomovilVacio (void){
+/**void escribeAutomovil (Automovil v){
+    cout << v.Nbastidor << " " << v.modelo << " " << v.color << " " << v.concesionario << endl;
+}*/
+
+/**Automovil dameAutomovilVacio (void){
     Automovil p;
     //p.identificador=0;
     //p.dni="0";
     //p.nombre="0";
     return p;
-}
+}*/
+
 
 string bastidorAleatorio(){
             string numBastidor;
@@ -34,14 +39,15 @@ string bastidorAleatorio(){
             int j = 0;
             int t = 0;
 
-            srand(time(NULL));
+          //  srand(time(NULL));
             for (j = 0; j < 3; j++){
+
                 int i = 0;
 
                 i = rand() % 25;
                 letra += unaLetra[i];
             }
-            srand(time(NULL));
+         //   srand(time(NULL));
             for (t = 0; t < 4; t++){
                 int i = 0;
 
@@ -58,6 +64,7 @@ string modeloAleatorio(){
             string unModelo = "";
             string nuevoModelo[] = {"Fiat", "Ford", "Seat", "Honda"};
 
+            //srand(time(NULL));
             modeloRandom = rand() % 4;
             return nuevoModelo[modeloRandom];
             return unModelo;
@@ -65,10 +72,12 @@ string modeloAleatorio(){
 
 string  colorAleatorio(){
 
-                srand(time(NULL));
+                //srand((unsigned int)time(NULL));
                 int i = 0;
                 string nuevoColor[] = {"rojo", "negro", "blanco", "azul", "verde", "gris"};
+                //srand(time(NULL));
                 i = rand() % 6;
+                cout << i << "**" << endl;
                 return nuevoColor[i];
         }
 
@@ -79,44 +88,53 @@ string concesionarioAleatorio(){
             int numeroRandom = 0;
             string nuevoConcesionarioLetras[] = {"A", "B", "C", "D"};
 
+            //srand(time(NULL));
             randomLetras = rand() % 4;
             numeroRandom = rand() % 4 + 1;
 
             return nuevoConcesionarioLetras[randomLetras] + to_string(numeroRandom);
         }
 
- vector<Automovil> generaAutomovil(){
+vector<Automovil> generaAutomovil(){
+    srand((unsigned int)time(NULL));
+    int nv = 40 + rand() % (60 + 1 - 40);
+    Automovil v;
+    //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior);
+    vector<Automovil> tmp;
+    for(int a = 0; a < nv; a++){
 
-     srand(time(NULL));
-     int nv;
+            v.color = colorAleatorio();
+            //v.concesionario = concesionarioAleatorio();
+            v.modelo = modeloAleatorio();
+            v.Nbastidor = bastidorAleatorio();
+            v.indice = a;
+            //cout << v->indice << " - " <<v->Nbastidor << " " << v->modelo << " " << v->color << " " << v->concesionario << endl;
 
-
-     vector<Automovil> tmp;
-     for(int a = 0; a < nv; a++){
-        nv = rand() % 60 + 40;
-        Automovil v;
-        v.color = colorAleatorio();
-        v.concesionario = concesionarioAleatorio();
-        v.modelo = modeloAleatorio();
-        v.Nbastidor = bastidorAleatorio();
-
-        tmp.push_back(v);
+            tmp.push_back(v);
     }
     return tmp;
+    //return v;
  }
-/**
- Automovil[] generaAutomovil(int numero){
 
-     Automovil tmp[numero];
-     for(int a = 0; a < numero; a++){
-        Automovil v;
-        v.color = colorAleatorio();
-        v.concesionario = concesionarioAleatorio();
-        v.modelo = modeloAleatorio();
-        v.Nbastidor = bastidorAleatorio();
+ vector<Automovil> generaAutomovil(int nv){
+    //srand((unsigned int)time(NULL));
+    Automovil v;
+    //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior);
+    vector<Automovil> tmp;
+    for(int a = 0; a < nv; a++){
 
-        tmp[a] = v
+            v.color = colorAleatorio();
+            //v.concesionario = concesionarioAleatorio();
+            v.modelo = modeloAleatorio();
+            v.Nbastidor = bastidorAleatorio();
+            v.indice = a;
+            //cout << v->indice << " - " <<v->Nbastidor << " " << v->modelo << " " << v->color << " " << v->concesionario << endl;
+
+            tmp.push_back(v);
     }
     return tmp;
- }*/
+    //return v;
+ }
+
+
 

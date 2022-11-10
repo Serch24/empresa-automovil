@@ -26,28 +26,24 @@ int main()
         cin >> opcion;
         Cola cola;
         Pila pila;
-        vector<Automovil> qwq = generaAutomovil();
+        vector<Automovil> fabrica;
         switch (opcion){
         case 1:
-            /**Automovil  * tmp = generaAutomovil();
-            int getArrayLength = sizeof(tmp)/sizeof(Automovil);
-            for (int a = 0; a <= getArrayLength, a++){
-                //cola.encolar(tmp[a]);
-                cout << tmp[a] << endl;
+            fabrica = generaAutomovil();
 
-            };*/
 
-            for(int i = 0; i< qwq.size(); i++){
-                cout << qwq.at(i).color << endl;
-            }
-            /**for(Automovil zz: qwq)
+            for(Automovil zz: qwq)
+                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;
 
-                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;*/
-                //cout << zz.concesionario << endl;
-                //cout << zz.modelo << endl;
-                //cout << zz.Nbastidor << endl;
             break;
         case 2:
+            int nv;
+            cout <<"Introduce el numero de automoviles que se van a generar: "<< endl;
+            cin >> nv;
+
+            qwq = generaAutomovil(nv);
+            for(Automovil zz: qwq)
+                cout << zz.color << zz.concesionario << zz.modelo << zz.Nbastidor << endl;
 
             break;
         case 3:

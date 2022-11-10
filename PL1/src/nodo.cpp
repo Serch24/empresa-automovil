@@ -10,14 +10,17 @@
 //void escribeAutomovil (Automovil p){
     //cout << p.identificador << " " << p.dni << " " << p.nombre << endl;
 //}
+/**void escribeAutomovil (Automovil v){
+    cout << v.Nbastidor << " " << v.modelo << " " << v.color << " " << v.concesionario << endl;
+}*/
 
-/**Automovil dameAutomovilVacio (void){
+Automovil dameAutomovilVacio (void){
     Automovil p;
     //p.identificador=0;
     //p.dni="0";
     //p.nombre="0";
     return p;
-}*/
+}
 
 //int identificadorAleatorio(void)
 //{

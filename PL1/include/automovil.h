@@ -9,13 +9,11 @@ using namespace std;
 
 struct Automovil
 {
-        string Nbastidor = "ad";
-        string modelo = "ad";
-        string color = "ad" ;
+        string Nbastidor;
+        string modelo ;
+        string color;
         string concesionario = "Z0";
-
-        /**Automovil(string bastidorAleatorio, string modeloAleatorio, string colorAleatorio, string concesionarioAleatorio);
-        ~Automovil();*/
+        int indice;
 };
 
 
@@ -23,12 +21,14 @@ Automovil leeAutomovil (void);
 void escribeAutomovil (Automovil p);
 Automovil dameAutomovilVacio (void);
 
+//Automovil generaAutomovil();
+//Automovil escribeAutomovil();
 vector<Automovil> generaAutomovil(void);
 string bastidorAleatorio();
 string modeloAleatorio();
 string colorAleatorio();
 string concesionarioAleatorio();
-//Automovil * generaAutomovil(int numero);
+vector<Automovil> generaAutomovil(int nv);
 
 
 #endif

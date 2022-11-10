@@ -17,9 +17,10 @@ void Pila::apilar(Automovil v)
 Automovil Pila::desapilar()
 {
     pNodo nodo; //Var aux para manipular el nodo
-    Automovil v; //Var aux para el retorno del valor del nodo
+    Automovil valor; //Var aux para el retorno del valor del nodo
 
-    if(!cima) return dameAutomovilVacio(); // Si no hay nodos en la pila se devuelve 0
+    //if(!cima) return dameAutomovilVacio(); // Si no hay nodos en la pila se devuelve 0
+    if(!cima) return valor;
 
     // Nodo apunta al primer elemento de la pila
     nodo = cima;
@@ -28,12 +29,14 @@ Automovil Pila::desapilar()
     cima= nodo->siguiente;
 
     //Se guarda el retorno del valor del nodo
-    v = nodo->valor;
+    //v = nodo->valor;
+    valor = nodo->v;
 
     //Se borra el nodo
     delete nodo;
 
-    return v;
+    //return v;
+    return valor;
 }
 
 //Destructor de la Pila
@@ -42,7 +45,7 @@ Pila::~Pila()
     while(cima) desapilar();
 }
 
-void Pila::mostrarCima()
+/**void Pila::mostrarCima()
 {
     if(!cima) cout << "Cima: 0" << endl;
     else{
@@ -50,5 +53,5 @@ void Pila::mostrarCima()
         Automovil escribeAutomovil(cima->valor);
     }
 
-}
+}*/
 
