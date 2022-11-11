@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "automovil.h"
+//#include <ctime>
 
 using namespace std;
 
@@ -18,7 +19,6 @@ int main()
         cout <<"7. Borrar automoviles" << endl;
         cout <<"8. Realizar simulacion" << endl;
         cout <<"0. Salir" << endl;
-
         cin >> opcion;
 
         switch (opcion){
@@ -27,7 +27,7 @@ int main()
             break;
         case 2:
             int nv;
-            cout << "introcude algo " << endl;
+            cout << "Introduce el número de automóviles que se van a crear: " << endl;
             cin >> nv;
             encola_automovil(nv);
             break;
@@ -36,13 +36,13 @@ int main()
             mostrar_fabrica();
             break;
         case 4:
-
+            asignar_zona();
             break;
         case 5:
-            // lo que María hará ;)
+            motrarTamanoPila();
             break;
         case 6:
-            // lo que María hará ;)
+            asignar_zona_concesionario();
             break;
         case 7:
             // lo que María hará ;)

@@ -8,13 +8,18 @@ using namespace std;
 class Pila
 {
     private:
-        pNodo cima;
+        int np = generarTamanoPila();
+        int tamanoAhora = 0;
     public:
         Pila() : cima(NULL) {}        //Constructor de Pila
         ~Pila();
+        pNodo cima;
         void apilar(Automovil v);
         Automovil desapilar();
-        void aa();
+        Automovil mostrar_cima();
+        int tamanoDePila();
+        int getTamanoAhora();
+        void setTamanoAhora(int num);
 };
 
 

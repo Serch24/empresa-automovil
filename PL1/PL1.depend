@@ -2,40 +2,39 @@
 1584209020 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\pl1\main.cpp
 	<iostream>
 
-1668106765 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
+1668196866 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\main.cpp
 	<iostream>
 	"automovil.h"
 
-1668106926 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\automovil.cpp
+1668196876 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\automovil.cpp
 	"automovil.h"
 	<stdlib.h>
-	<ctime>
 	<iostream>
+	<ctime>
 	<string>
 	"cola.h"
 	"pila.h"
 
-1668108662 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\automovil.h
+1668194481 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\automovil.h
 	<iostream>
-	<vector>
 
-1668099284 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\pila.h
+1668191618 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\pila.h
 	<iostream>
 	"nodo.h"
 
 1668104832 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\nodo.h
 	"automovil.h"
 
-1668104923 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\cola.h
+1668195808 c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\include\cola.h
 	<iostream>
 	"nodo.h"
 
-1668092864 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\nodo.cpp
+1668169760 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\nodo.cpp
 	"nodo.h"
 
-1668103554 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\cola.cpp
+1668169693 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\cola.cpp
 	"cola.h"
 
-1668100024 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\pila.cpp
+1668185990 source:c:\users\maria\documents\uah\3ºcurso uah\estructuras de datos\práctica 1\empresa-automovil\pl1\src\pila.cpp
 	"pila.h"
 
