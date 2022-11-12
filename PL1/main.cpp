@@ -1,7 +1,5 @@
 #include <iostream>
-
 #include "automovil.h"
-//#include <ctime>
 
 using namespace std;
 
@@ -9,12 +7,13 @@ int main()
 {
     int opcion;
 
+    srand(time(NULL));
     do{
-        cout <<"1. Generar automoviles disponibles" << endl;
-        cout <<"2. Generar automoviles en la fabrica" << endl;
+        cout <<"1. Generar automoviles aleatorios" << endl;
+        cout <<"2. Generar tus automoviles" << endl;
         cout <<"3. Mostrar automoviles en fabrica" << endl;
-        cout <<"4. Transportar automovil al almacen" << endl;
-        cout <<"5. Mostrar automoviles en el almacen" << endl;
+        cout <<"4. Transportar automovil a la zona " << endl;
+        cout <<"5. Mostrar tus automoviles en zona" << endl;
         cout <<"6. Mostrar datos del almacen" << endl;
         cout <<"7. Borrar automoviles" << endl;
         cout <<"8. Realizar simulacion" << endl;
@@ -35,15 +34,16 @@ int main()
             mostrar_fabrica();
             break;
         case 4:
-            asignar_zona();
+            asignar_zona(-1);
             break;
         case 5:
-           mostrarTamanoPila(); 
+            int ns;
+            cout << "Introduce el numero de automoviles que salen del almacen: " << endl;
+            cin >> ns;
+            asignar_zona(ns);
             break;
         case 6:
-            // sale error cuando se piden 2,3,4 y 5 coches.
-            // ya lo solucioné jaja, era un problema con el indice de un array :S
-            asignar_zona_concesionario();
+           mostrarTamanoPila(); 
             break;
         case 7:
             // lo que María hará ;)

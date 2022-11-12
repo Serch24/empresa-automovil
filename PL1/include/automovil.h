@@ -29,7 +29,7 @@ Automovil generaAutomovil(int nv);
 void encola_automovil();
 void encola_automovil(int nv);
 void mostrar_fabrica();
-void asignar_zona();
+void asignar_zona(int cant);
 int generarTamanoPila();
 void mostrarTamanoPila();
 void asignar_zona_concesionario();
