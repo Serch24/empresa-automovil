@@ -16,7 +16,7 @@ class Cola
         Automovil desencolar();
         Automovil cimaCola();
         pNodo primero;
-        int tamanoDeCola;
+        int tamanoDeCola = 0;
 
     protected:
 

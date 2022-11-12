@@ -27,11 +27,10 @@ int main()
             break;
         case 2:
             int nv;
-            cout << "Introduce el número de automóviles que se van a crear: " << endl;
+            cout << "Introduce el numero de automoviles que se van a crear: " << endl;
             cin >> nv;
             encola_automovil(nv);
             break;
-
         case 3:
             mostrar_fabrica();
             break;
@@ -39,9 +38,11 @@ int main()
             asignar_zona();
             break;
         case 5:
-            motrarTamanoPila();
+           mostrarTamanoPila(); 
             break;
         case 6:
+            // sale error cuando se piden 2,3,4 y 5 coches.
+            // ya lo solucioné jaja, era un problema con el indice de un array :S
             asignar_zona_concesionario();
             break;
         case 7:
