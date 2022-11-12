@@ -1,11 +1,23 @@
 #include "cola.h"
+#include "nodo.h"
 
 Cola::~Cola()
 {
     while(primero) desencolar();
 }
 
-
+void Cola::mostrarCola(){
+        pNodo aux = NULL;
+        if(primero) {
+                aux = new Nodo(primero->valor); 
+                aux = primero;
+        }
+        while(aux){
+                cout << aux->valor.Nbastidor << " " << aux->valor.modelo << " " << aux->valor.color << " "<< aux->valor.concesionario << endl;
+                aux = aux->siguiente;
+        }
+        delete aux;
+}
 
 void Cola::encolar(Automovil v)
 {

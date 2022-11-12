@@ -15,9 +15,9 @@ class Cola
         void encolar(Automovil v);
         Automovil desencolar();
         Automovil cimaCola();
+        void mostrarCola();
         pNodo primero;
         int tamanoDeCola = 0;
-
     protected:
 
     private:

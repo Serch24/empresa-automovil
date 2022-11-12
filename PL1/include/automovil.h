@@ -33,5 +33,6 @@ void asignar_zona(int cant);
 int generarTamanoPila();
 void mostrarTamanoPila();
 void asignar_zona_concesionario();
+void borrarTodo();
 
 #endif

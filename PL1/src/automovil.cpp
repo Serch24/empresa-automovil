@@ -1,11 +1,11 @@
 #include "automovil.h"
 
-#include <cwchar>
 #include <stdlib.h>
 #include <iostream>
 #include <ctime>
 #include <string>
 #include "cola.h"
+#include "nodo.h"
 #include "pila.h"
 
 using namespace std;
@@ -92,6 +92,78 @@ string  colorAleatorio(){   //genera color aleatorio
     return nuevoColor[i];
 }
 
+void borrarTodo(){
+        // se limpia la fabrica
+        while(fabrica.primero){
+                fabrica.desencolar();
+                fabrica.tamanoDeCola = fabrica.tamanoDeCola - 1;
+        }
+
+        // se limpian todos los camiones
+        while(camionA0.cima){
+                int size = camionA0.getTamanoAhora();
+                camionA0.desapilar();
+                camionA0.setTamanoAhora(size - 1);
+        }
+        while(camionA1.cima){
+                int size = camionA1.getTamanoAhora();
+                camionA1.desapilar();
+                camionA1.setTamanoAhora(size - 1);
+        }
+        while(camionB0.cima){
+                int size = camionB0.getTamanoAhora();
+                camionB0.desapilar();
+                camionB0.setTamanoAhora(size - 1);
+        }
+        while(camionB1.cima){
+                int size = camionB1.getTamanoAhora();
+                camionB1.desapilar();
+                camionB1.setTamanoAhora(size - 1);
+        }
+        while(camionC0.cima){
+                int size = camionC0.getTamanoAhora();
+                camionC0.desapilar();
+                camionC0.setTamanoAhora(size - 1);
+        }
+        while(camionC1.cima){
+                int size = camionC1.getTamanoAhora();
+                camionC1.desapilar();
+                camionC1.setTamanoAhora(size - 1);
+        }
+        while(camionD0.cima){
+                int size = camionD0.getTamanoAhora();
+                camionD0.desapilar();
+                camionD0.setTamanoAhora(size - 1);
+        }
+        while(camionD1.cima){
+                int size = camionD1.getTamanoAhora();
+                camionD1.desapilar();
+                camionD1.setTamanoAhora(size - 1);
+        }
+
+        // se limpian los todos los registros
+        while(registroA.primero){
+                registroA.desencolar();
+                registroA.tamanoDeCola = registroA.tamanoDeCola - 1;
+        }
+        while(registroB.primero){
+                registroB.desencolar();
+                registroB.tamanoDeCola = registroB.tamanoDeCola - 1;
+        }
+        while(registroC.primero){
+                registroC.desencolar();
+                registroC.tamanoDeCola = registroC.tamanoDeCola - 1;
+        }
+        while(registroD.primero){
+                registroD.desencolar();
+                registroD.tamanoDeCola = registroD.tamanoDeCola - 1;
+        }
+
+        cout << " Se han borrado todos los datos!" << endl;
+        cout << " ----------------------------------------------------" << endl;
+        cout << " " << endl;
+
+}
 string concesionarioAleatorio_letra(){      //genera letra aleatoria del concesionario
     int randomLetra;
     string nuevoConcesionarioLetra[] = {"A0", "B0", "C0", "D0"};
@@ -292,16 +364,16 @@ void mostrarTamanoPila(){
     cout << "Hay automoviles en camion A1: " << camionA1.getTamanoAhora() << endl;
     cout << "Hay automoviles en el registro A: " << registroA.tamanoDeCola << endl;
     cout << " " << endl;
-    cout << "camion B0: " << camionB0.getTamanoAhora() << endl;
-    cout << "camion B1: " << camionB1.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion B0: " << camionB0.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion B1: " << camionB1.getTamanoAhora() << endl;
     cout << "Hay automoviles en el registro B: " << registroB.tamanoDeCola << endl;
     cout << " " << endl;
-    cout << "camion C0: " << camionC0.getTamanoAhora() << endl;
-    cout << "camion C1: " << camionC1.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion C0: " << camionC0.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion C1: " << camionC1.getTamanoAhora() << endl;
     cout << "Hay automoviles en el registro C: " << registroC.tamanoDeCola << endl;
     cout << " " << endl;
-    cout << "camion D0: " << camionD0.getTamanoAhora() << endl;
-    cout << "camion D1: " << camionD1.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion D0: " << camionD0.getTamanoAhora() << endl;
+    cout << "Hay automoviles en camion D1: " << camionD1.getTamanoAhora() << endl;
     cout << "Hay automoviles en el registro D: " << registroD.tamanoDeCola << endl;
     cout << " " << endl;
     cout << " Hay Automoviles en fabrica: "<< fabrica.tamanoDeCola  << endl;
@@ -356,13 +428,5 @@ void encola_automovil(int nv){      //Punto 2: encola NV coches
 }
 
 void mostrar_fabrica(){     //Punto 3: imprime coches de la cola
-    cout << fabrica.tamanoDeCola << endl;
-    Cola aux_fabrica;
-    Automovil aux_coche;
-    while(fabrica.primero){
-        aux_coche = fabrica.desencolar();
-        cout << aux_coche.Nbastidor << " " << aux_coche.modelo << " " << aux_coche.color << " " << aux_coche.concesionario << endl;
-        aux_fabrica.encolar(aux_coche);
-    }
-    //fabrica = aux_fabrica;
+    fabrica.mostrarCola();
 }

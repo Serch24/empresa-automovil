@@ -46,7 +46,7 @@ int main()
            mostrarTamanoPila(); 
             break;
         case 7:
-            // lo que María hará ;)
+            borrarTodo();
             break;
         case 8:
             // lo que María hará ;)
