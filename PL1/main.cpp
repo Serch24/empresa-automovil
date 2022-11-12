@@ -1,6 +1,8 @@
 #include <iostream>
 #include "automovil.h"
 
+/* codigo hecho por Martina y Sergio ;)  */
+
 using namespace std;
 
 int main()
@@ -49,7 +51,7 @@ int main()
             borrarTodo();
             break;
         case 8:
-            // lo que María hará ;)
+            realizarSimulacionCompleta();
             break;
 
         }

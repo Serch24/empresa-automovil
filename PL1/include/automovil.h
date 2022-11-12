@@ -2,7 +2,6 @@
 #define AUTOMOVIL_H_INCLUDED
 
 #include <iostream>
-//#include <vector>
 
 using namespace std;
 
@@ -34,5 +33,6 @@ int generarTamanoPila();
 void mostrarTamanoPila();
 void asignar_zona_concesionario();
 void borrarTodo();
+void realizarSimulacionCompleta();
 
 #endif

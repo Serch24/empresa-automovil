@@ -30,13 +30,6 @@ Cola registroD;
 
 //Cola aux_fabrica;
 
-Automovil leeAutomovil (void){
-    Automovil p;
-    cout << "\nIdentificador:\n";
-    cin >> p.color;
-    return p;
-}
-
 Automovil dameAutomovilVacio(void){     //coche vacio
     Automovil p;
     p.Nbastidor = "";
@@ -90,6 +83,37 @@ string  colorAleatorio(){   //genera color aleatorio
 
     i = rand() % 6;
     return nuevoColor[i];
+}
+
+void realizarSimulacionCompleta(){
+        cout << "--------------  Automoviles aleatorios --------------" <<endl;
+        cout << " " << endl;
+        encola_automovil();
+        cout << " " << endl;
+        cout << "----------------------------------------------------- " << endl;
+
+        cout << "------------ Coches en fabrica ----------------" << endl;
+        cout << " " << endl;
+        mostrar_fabrica();
+        cout << "----------------------------------------------------- " << endl;
+
+        cout << " Asignando zonas a los automoviles y apilandolos en los camiones" << endl;
+        cout << " " << endl;
+        while(fabrica.primero){
+                asignar_zona(-1);
+                cout << "----------------------------------------------------- " << endl;
+
+                cout << "Mostrando los datos de los camiones y registros " << endl;
+                cout << " " << endl;
+                mostrarTamanoPila();
+                cout << "----------------------------------------------------- " << endl;
+        }
+
+        cout << "Borrando los camiones y los registros" << endl;
+        cout << " " << endl;
+        borrarTodo();
+        cout << "----------------------------------------------------- " << endl;
+
 }
 
 void borrarTodo(){
@@ -174,7 +198,7 @@ string concesionarioAleatorio_letra(){      //genera letra aleatoria del concesi
 
 void asignar_zona_concesionario(){
     Automovil autom;
-    int i = 0;
+    int i = 1;
     while(camionA0.cima){
             int sizeCamion = camionA0.getTamanoAhora(); 
             autom = camionA0.desapilar();
@@ -185,7 +209,7 @@ void asignar_zona_concesionario(){
             cout << autom.Nbastidor << " " << autom.modelo << " " <<autom.color << " " << autom.concesionario << endl;
             i = i + 1;
     }
-    i = 0;
+    i = 1;
     while(camionA1.cima){
         int sizeCamion = camionA1.getTamanoAhora(); 
         autom = camionA1.desapilar();
@@ -197,7 +221,7 @@ void asignar_zona_concesionario(){
         i = i + 1;
     }
 
-    i = 0;
+    i = 1;
     while(camionB0.cima){
         int sizeCamion = camionB0.getTamanoAhora(); 
         autom = camionB0.desapilar();
@@ -209,7 +233,7 @@ void asignar_zona_concesionario(){
         i = i + 1;
     }
 
-    i = 0;
+    i = 1;
     while(camionB1.cima){
         int sizeCamion = camionB1.getTamanoAhora(); 
         autom = camionB1.desapilar();
@@ -221,7 +245,7 @@ void asignar_zona_concesionario(){
         i = i + 1;
     }
 
-    i = 0;
+    i = 1;
     while(camionC0.cima){
         int sizeCamion = camionC0.getTamanoAhora(); 
         autom = camionC0.desapilar();
@@ -233,7 +257,7 @@ void asignar_zona_concesionario(){
         i = i + 1;
     }
 
-    i = 0;
+    i = 1;
     while(camionC1.cima){
         int sizeCamion = camionC1.getTamanoAhora(); 
         autom = camionC1.desapilar();
